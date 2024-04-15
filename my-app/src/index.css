@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.form {
+  display: grid;
+  grid-template: 40px 40px / 1fr 1fr;
+  gap: 17px 0px;
+}
+
+.form-input {
+  max-width: 80%;
+  font-family: "Karla", sans-serif;
+  border-radius: 5px;
+  border: 1px solid #d5d4d8;
+  text-indent: 5px;
+}
+.form-button {
+  grid-column: 1 / -1;
+  max-width: 91%;
+  background: linear-gradient(90deg, #face1b,  #6CC14B 100%);
+  color: white;
+  font-size:20px;
+  font-weight:"bold";
+  border: none;
+  cursor: pointer;
+}
+
+.form-button:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.form-button:active {
+  background: linear-gradient(90deg, #e100ff, #7f00ff 100%);
+  border: 1px solid black;
+}
+
+.meme {
+  margin-top: 20px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  /* max-width: 20%; */
+}
+
+.meme--image {
+  border-radius: 3px;
+  max-height: 50vh;
+  /* max-width: 40%; */
+  box-shadow: 1px 1px 2px 1px grey;
+}
+
+.meme--text {
+  position: absolute;
+  max-width: 80%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 15px 0;
+  padding: 0 5px;
+  font-family: impact, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
+    -2px 2px 0 #000, 0 2px 0 #000, 2px 0 0 #000, 0 -2px 0 #000, -2px 0 0 #000,
+    2px 2px 5px #000;
+}
+
+.bottom {
+  bottom: 0;
+}
+
+.top {
+  top: 0;
+}
+:root{
+  --primary-white: #F5F5DC;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  font-family: cursive;
+  scroll-behavior: smooth;
+}
+body{
+  background-color:var(--primary-white);
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+body,html{
+  height:100%;
+}

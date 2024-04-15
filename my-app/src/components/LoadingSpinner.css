@@ -1,0 +1,29 @@
+.loading-spinner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* height: 200px; */
+    width:100vw;
+    margin-top: 20px;
+    padding-top: 30px;
+     /* Adjust height as needed */
+  }
+  
+  .spinner {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 5px solid rgba(0, 0, 0, 0.1); /* Adjust border color and opacity */
+    border-top-color: #46703b; /* Adjust spinner color */
+    animation: spin 1s linear infinite; /* Adjust animation duration and timing */
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
